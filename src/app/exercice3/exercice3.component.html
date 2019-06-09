@@ -1,9 +1,5 @@
-<p *ngIf="statut">p1</p>
+<p *ngIf="statut === true">p1</p>
 
-<p *ngIf="!statut">p2</p>
+<p *ngIf="statut === false">p2</p>
 
 <button type="button" (click)="updateStatut()" class="btn btn-primary">Button</button>
-
-<ul>
-    <li *ngFor="text of texts"> {{text}}</li>
-</ul>
