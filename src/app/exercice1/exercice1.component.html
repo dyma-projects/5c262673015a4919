@@ -1,12 +1,25 @@
-<!-- Liaison d'attribut -->
-<input type="text" [disabled]="disabled">
 
+
+<!-- Liaison d'attribut -->
+<br>
+<div class="row">
+<div class="col-3">
+<input type="text" [disabled]="disabled">
+</div>
+
+<div class="col-1"></div>
+
+<div class="col-4">
 <!-- Liaison d'événement -->
-<button type="button" class="btn btn-primary" (click)="updateName()">Button</button>
+<button type="button" class="btn btn-primary" (click)="displayNumber()">display</button>
+</div>
 
 <!-- interpolation de variable -->
-<p> mon nom est {{ name }}</p>
+<div class="col-4">
 
+<p> mon nom est {{ name }}</p>
+</div>
+</div>
 
 
 

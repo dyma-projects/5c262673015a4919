@@ -17,6 +17,7 @@ export class Exercice3Component implements OnInit {
 
   updateStatut() {
     this.statut = !this.statut;
+    console.log(this.statut);
   }
 
 }

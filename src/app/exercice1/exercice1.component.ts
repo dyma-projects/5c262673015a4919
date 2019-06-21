@@ -8,17 +8,19 @@ import { Component, OnInit } from '@angular/core';
 export class Exercice1Component implements OnInit {
   name: string;
   update: boolean;
+  disabled: boolean;
 
   constructor() {
   }
 
   ngOnInit() {
-    this.name = 'iddir';
+    this.disabled = true;
+    this.name = 'iddir ';
     this.update = true;
   }
 
-  updateName() {
-    this.name = 'salma';
+  displayNumber() {
+    console.log('123');
   }
 
 }
